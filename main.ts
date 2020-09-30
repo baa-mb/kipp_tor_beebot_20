@@ -12,8 +12,20 @@ basic.forever(function () {
     if (input.rotation(Rotation.Pitch) > kipp_limit) {
         if (is_sharp == 1) {
             music.startMelody(music.builtInMelody(Melodies.Punchline), MelodyOptions.Once)
-            basic.showIcon(IconNames.SmallSquare)
-            basic.showIcon(IconNames.Square)
+            basic.showLeds(`
+                . . # . .
+                . # # # .
+                # . # . #
+                . . # . .
+                . . # . .
+                `)
+            basic.showLeds(`
+                # . . . #
+                # . . . #
+                # . . . #
+                # . . . #
+                # # # # #
+                `)
             is_sharp = 0
         }
     } else {
