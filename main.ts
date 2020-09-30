@@ -31,11 +31,11 @@ basic.forever(function () {
         }
     } else {
         basic.showLeds(`
+            . . . . .
+            . . . . .
             . . # . .
             . # . # .
             # . . . #
-            . . . . .
-            . . . . .
             `)
         if (is_sharp == 0) {
             if (input.rotation(Rotation.Pitch) < kipp_limit) {
