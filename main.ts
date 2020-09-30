@@ -1,5 +1,8 @@
+input.onButtonPressed(Button.A, function () {
+    reset()
+})
 function reset () {
-    basic.showIcon(IconNames.SmallDiamond)
+    basic.showIcon(IconNames.Scissors)
     basic.pause(3000)
     kipp_limit = input.rotation(Rotation.Pitch) + 5
     basic.showNumber(kipp_limit)
@@ -32,10 +35,10 @@ basic.forever(function () {
     } else {
         basic.showLeds(`
             . . . . .
-            . . . . .
             . . # . .
             . # . # .
             # . . . #
+            . . . . .
             `)
         if (is_sharp == 0) {
             if (input.rotation(Rotation.Pitch) < kipp_limit) {
