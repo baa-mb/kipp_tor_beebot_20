@@ -1,5 +1,6 @@
 {
     "name": "kipp_tor_beebot_20",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
