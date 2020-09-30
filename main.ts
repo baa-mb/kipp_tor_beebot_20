@@ -2,7 +2,13 @@ input.onButtonPressed(Button.A, function () {
     reset()
 })
 function reset () {
-    basic.showIcon(IconNames.Scissors)
+    basic.showLeds(`
+        . . . . .
+        . # . . .
+        # . . . .
+        . # . . .
+        . . . . .
+        `)
     basic.pause(3000)
     kipp_limit = input.rotation(Rotation.Pitch) + 5
     basic.showNumber(kipp_limit)
@@ -22,7 +28,7 @@ basic.forever(function () {
                 . . # . .
                 . . # . .
                 `)
-            basic.pause(2000)
+            basic.pause(3000)
             basic.showLeds(`
                 # . . . #
                 # . . . #
